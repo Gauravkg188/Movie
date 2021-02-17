@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <ImageView
+
+            android:id="@+id/image_poster"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="187dp" />
+
+        <LinearLayout
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_below="@+id/image_poster"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="Title"
+                android:layout_marginLeft="3dp"
+                android:textColor="#9668F3"
+                android:textSize="19dp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_language"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@+id/layout_title"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="4dp"
+            android:text="English"
+            android:textColor="#078E0C"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_below="@+id/layout_title"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="4dp"
+            android:text="5 Star"
+            android:textColor="#078E0C"
+            android:textSize="17dp" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
